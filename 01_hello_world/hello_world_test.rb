@@ -8,14 +8,17 @@ class HelloWorldTest < Minitest::Test
   end
 
   def test_say_hello_to_ana
+    skip "Delete me if previous test passed"
     assert_equal 'Hello Ana!', HelloWorld.hello('Ana')
   end
 
   def test_say_hello_to_no_someone
+    skip "Delete me if previous test passed"
     assert_equal 'Hello ...someone!', HelloWorld.hello('')
   end
 
   def test_say_hello_to_no_empty_string
+    skip "Delete me if previous test passed"
     assert_equal 'Hello ...someone!', HelloWorld.hello('    ')
   end
 end

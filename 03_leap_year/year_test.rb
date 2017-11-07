@@ -1,6 +1,10 @@
 require 'minitest/autorun'
 require_relative 'year.rb'
 
+# on every year that is evenly divisible by 4
+# except every year that is evenly divisible by 100
+# unless the year is also evenly divisible by 400
+
 class YearTest < Minitest::Test
   def test_leap_year
     assert Year.leap?(1996), "Expected 'true', 1996 is a leap year."
